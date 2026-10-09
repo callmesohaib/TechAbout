@@ -1,0 +1,91 @@
+/* Footer */
+
+.site-footer {
+  padding: 3.25rem 0 0;
+  background:
+    linear-gradient(160deg, var(--ocean-deep), var(--ocean) 55%, #0a5f62);
+  color: rgba(232, 246, 247, 0.82);
+}
+
+.site-footer a {
+  color: rgba(232, 246, 247, 0.88);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
+.footer-inner {
+  display: grid;
+  gap: 2.25rem;
+  padding-bottom: 2.5rem;
+}
+
+.footer-brand .brand-text {
+  color: #fff;
+  margin: 0 0 0.55rem;
+  font-size: 1.45rem;
+  letter-spacing: -0.02em;
+}
+
+.footer-brand p:last-child {
+  margin: 0;
+  max-width: 28rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(232, 246, 247, 0.72);
+}
+
+.footer-heading {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-soft);
+  font-size: 0.95rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.footer-links a {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.payment-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.payment-list li {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #e8f6f7;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1.15rem 1.25rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: rgba(232, 246, 247, 0.62);
+}

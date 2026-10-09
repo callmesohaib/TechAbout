@@ -1,0 +1,118 @@
+/* FAQ: clean soft line accordion */
+
+.faq {
+  background: #fff;
+  padding: 5.5rem 0 6rem;
+}
+
+.faq-wrap {
+  max-width: 920px;
+}
+
+.faq-head {
+  text-align: center;
+  margin: 0 auto 3.25rem;
+  max-width: 32rem;
+}
+
+.faq-head h2 {
+  margin: 0;
+  font-family: var(--font-soft);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: #1d1d1f;
+}
+
+.faq-list {
+  display: grid;
+  gap: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  overflow: visible;
+  border-top: 1px solid #ebebeb;
+}
+
+.faq-list details {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 0;
+  padding: 0;
+}
+
+.faq-list details:last-child {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.faq-list details[open] {
+  background: transparent;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  font-family: var(--font-soft);
+  font-weight: var(--weight-heading);
+  padding: 1.7rem 0;
+  list-style: none;
+  color: #1d1d1f;
+  font-size: 1.125rem;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::marker {
+  content: "";
+}
+
+.faq-list summary span {
+  flex: 1;
+  text-align: left;
+  padding-right: 0.5rem;
+}
+
+.faq-list summary::after {
+  content: "+";
+  flex: 0 0 auto;
+  width: 1.75rem;
+  display: inline-block;
+  border: 0;
+  border-radius: 0;
+  color: #2d2d2d;
+  font-size: 1.85rem;
+  font-weight: 300;
+  line-height: 1;
+  background: transparent;
+  padding: 0;
+  text-align: center;
+}
+
+.faq-list details[open] summary::after {
+  content: "–";
+  background: transparent;
+  border: 0;
+  color: #2d2d2d;
+  font-weight: 300;
+}
+
+.faq-answer {
+  padding: 0 2.75rem 1.55rem 0;
+}
+
+.faq-list details p {
+  margin: 0;
+  color: #6b7280;
+  max-width: 38rem;
+  font-size: 0.98rem;
+  line-height: 1.75;
+  font-weight: 400;
+}

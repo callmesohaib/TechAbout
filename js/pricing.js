@@ -195,3 +195,84 @@
   readStored();
   render(false);
 })();
+
+(function () {
+  "use strict";
+
+  var header = document.querySelector(".site-header");
+  var hero = document.querySelector(".hero-band");
+
+  if (!header || !hero) {
+    return;
+  }
+
+  function setPastHero(past) {
+    header.classList.toggle("is-past-hero", past);
+  }
+
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(
+      function (entries) {
+        setPastHero(!entries[0].isIntersecting);
+      },
+      { threshold: 0 }
+    );
+    observer.observe(hero);
+  } else {
+    function onScroll() {
+      var bottom = hero.getBoundingClientRect().bottom;
+      setPastHero(bottom <= 0);
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+})();
+
+(function () {
+  "use strict";
+
+  var header = document.querySelector(".site-header");
+  var toggle = document.getElementById("nav-toggle");
+  var nav = document.getElementById("site-nav");
+
+  if (!header || !toggle || !nav) {
+    return;
+  }
+
+  function setOpen(open) {
+    header.classList.toggle("is-nav-open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  }
+
+  function closeNav() {
+    setOpen(false);
+  }
+
+  toggle.addEventListener("click", function () {
+    setOpen(!header.classList.contains("is-nav-open"));
+  });
+
+  nav.addEventListener("click", function (event) {
+    if (event.target.tagName === "A") {
+      closeNav();
+    }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      closeNav();
+    }
+  });
+
+  window.addEventListener(
+    "resize",
+    function () {
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        closeNav();
+      }
+    },
+    { passive: true }
+  );
+})();

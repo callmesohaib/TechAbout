@@ -16,18 +16,34 @@
         <span class="brand-mark" aria-hidden="true"></span>
         <span class="brand-text">PKHosting</span>
       </a>
-      <nav class="header-nav" aria-label="Page">
+
+      <nav class="header-nav" id="site-nav" aria-label="Page">
         <a href="#plans">Plans</a>
         <a href="#compare">Compare</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <div class="currency-wrap">
-        <label class="sr-only" for="currency">Currency</label>
-        <select id="currency" name="currency" aria-label="Currency">
-          <option value="PKR" selected>PKR</option>
-          <option value="USD">USD</option>
-          <option value="GBP">GBP</option>
-        </select>
+
+      <div class="header-actions">
+        <div class="currency-wrap">
+          <label class="sr-only" for="currency">Currency</label>
+          <select id="currency" name="currency" aria-label="Currency">
+            <option value="PKR" selected>PKR</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+          </select>
+        </div>
+        <button
+          type="button"
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-controls="site-nav"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
       </div>
     </div>
   </header>
@@ -75,6 +91,7 @@
           </ul>
         </aside>
       </div>
+      <p class="hero-ghost" aria-hidden="true">PKHosting</p>
     </section>
     </div>
 
