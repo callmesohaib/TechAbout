@@ -799,12 +799,12 @@ a:hover {
   width: 100%;
   min-width: 640px;
   border-collapse: collapse;
-  font-size: 0.92rem;
+  font-size: 1.05rem;
 }
 
 .spec-table th,
 .spec-table td {
-  padding: 0.85rem 1rem;
+  padding: 0.95rem 1.05rem;
   text-align: left;
   border-bottom: 1px solid var(--line);
   vertical-align: top;
@@ -816,7 +816,7 @@ a:hover {
   color: var(--ink);
   position: sticky;
   top: 0;
-  font-size: 0.88rem;
+  font-size: 1rem;
 }
 
 .spec-table tbody th {
@@ -828,6 +828,12 @@ a:hover {
   z-index: 1;
   min-width: 9.5rem;
   border-right: 1px solid var(--line);
+  font-size: 1.02rem;
+}
+
+.spec-table tbody td {
+  font-size: 1.08rem;
+  color: var(--ink-soft);
 }
 
 .spec-table tbody tr:last-child th,
