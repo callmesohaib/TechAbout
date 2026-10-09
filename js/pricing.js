@@ -42,7 +42,7 @@
         state.currency = currency;
       }
     } catch (err) {
-      /* private mode / blocked storage — keep defaults */
+      /* private mode / blocked storage: keep defaults */
     }
   }
 
