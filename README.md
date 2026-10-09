@@ -22,8 +22,8 @@ npx --yes serve .
 | `css/styles.css` | Layout, responsive rules, focus styles |
 | `js/pricing.js` | Billing period, currency conversion, `localStorage`, live region |
 | `NOTES.md` | Live PKHosting pricing observations + trade-offs |
-| `screenshots/` | 360 / 768 / 1440 captures |
-| `lighthouse/` | Committed Lighthouse report |
+| `screenshots/` | Viewport captures (`mobile-view.png`, `ipad-view.png`, `desktop-view.png`) |
+| `lighthouse/` | Committed Lighthouse report (`report.html`, `report.json`, `SUMMARY.md`) |
 
 ## Pricing rules (implemented)
 
@@ -50,7 +50,7 @@ npx --yes serve .
 
 - Google Chrome (Windows)
 - Mozilla Firefox (Windows)
-- Viewports checked: **360**, **768**, **1440** (see `screenshots/`)
+- Viewports checked: mobile / tablet / desktop (see `screenshots/mobile-view.png`, `ipad-view.png`, `desktop-view.png`)
 - Also checked: keyboard tab order, 200% zoom, offline open from disk
 
 ## Performance / self-containment
