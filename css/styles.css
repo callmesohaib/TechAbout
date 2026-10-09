@@ -571,9 +571,12 @@ a:hover {
 }
 
 .plans-head h2 {
+  font-family: var(--font-soft);
   font-size: clamp(2rem, 4vw, 2.75rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #1d1d1f;
+  line-height: 1.2;
 }
 
 .compare .plans-head {
@@ -863,13 +866,13 @@ a:hover {
 }
 
 .faq-head h2 {
-  margin: 0 0 0.75rem;
+  margin: 0;
   font-family: var(--font-soft);
-  font-size: clamp(1.85rem, 3.5vw, 2.35rem);
+  font-size: clamp(2rem, 4vw, 2.75rem);
   font-weight: 600;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   line-height: 1.2;
-  color: #1f2937;
+  color: #1d1d1f;
 }
 
 .faq-list {
