@@ -32,6 +32,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: #032f3a;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -110,26 +111,29 @@ a:hover {
   margin-inline: auto;
 }
 
-/* Hero band owns the floating nav so both scroll away together */
-
-.hero-band {
-  position: relative;
-  background:
-    linear-gradient(125deg, #032f3a 0%, #075f6d 28%, #0d8a8a 58%, #e85d2a 140%);
-  padding: 0.85rem 0 0;
-}
-
-/* Header: floating over hero only (not sticky to the whole page) */
+/* Floating navbar: stays visible while scrolling the whole page */
 
 .site-header {
-  position: relative;
-  z-index: 5;
+  position: sticky;
+  top: 0.85rem;
+  z-index: 40;
   width: min(100% - 1.5rem, 920px);
-  margin: 0 auto;
+  margin: 0.85rem auto 0;
   background: rgba(255, 255, 255, 0.96);
   border: 1px solid var(--line);
   border-radius: 999px;
   backdrop-filter: blur(10px);
+}
+
+/* Pull hero under the floating nav so the top stays teal */
+
+.hero-band {
+  position: relative;
+  z-index: 0;
+  margin-top: -6.75rem;
+  padding-top: 6.75rem;
+  background:
+    linear-gradient(125deg, #032f3a 0%, #075f6d 28%, #0d8a8a 58%, #e85d2a 140%);
 }
 
 .header-inner {
@@ -1040,12 +1044,15 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .hero-band {
-    padding-top: 1rem;
-  }
-
   .site-header {
     width: min(100% - 2rem, 960px);
+    top: 1rem;
+    margin-top: 1rem;
+  }
+
+  .hero-band {
+    margin-top: -5.25rem;
+    padding-top: 5.25rem;
   }
 
   .header-inner {
