@@ -573,6 +573,10 @@ a:hover {
   letter-spacing: -0.03em;
 }
 
+.compare .plans-head {
+  margin-bottom: 2rem;
+}
+
 .plan-grid {
   list-style: none;
   margin: 0;
