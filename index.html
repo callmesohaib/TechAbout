@@ -80,8 +80,8 @@
 
     <section id="plans" class="plans" aria-labelledby="plans-heading">
       <div class="wrap">
-        <header class="section-head">
-          <h2 id="plans-heading">Choose a VPS plan</h2>
+        <header class="section-head plans-head">
+          <h2 id="plans-heading">Choose your VPS plan</h2>
         </header>
 
         <div class="controls">
@@ -100,84 +100,116 @@
 
         <ul class="plan-grid">
           <li class="plan-card" data-plan="starter" data-monthly="2400">
-            <h3>Starter</h3>
-            <p class="plan-tagline">Side projects and staging</p>
-            <p class="price-block">
-              <span class="price" data-price>
-                <span class="currency-code">Rs</span>
-                <span class="amount">2,400</span>
-              </span>
-              <span class="period" data-period>/mo</span>
-            </p>
-            <p class="annual-meta" data-annual-meta hidden></p>
-            <p class="savings" data-savings hidden></p>
+            <div class="plan-top">
+              <h3>Starter</h3>
+              <p class="plan-tagline">For side projects, staging sites, and first launches.</p>
+              <p class="price-block">
+                <span class="price" data-price>
+                  <span class="currency-code">Rs</span>
+                  <span class="amount">2,400</span>
+                </span>
+                <span class="period" data-period>/mo</span>
+              </p>
+              <a class="btn btn-plan" href="#footer">Choose plan</a>
+              <p class="annual-meta" data-annual-meta hidden></p>
+              <p class="savings" data-savings hidden></p>
+            </div>
             <ul class="plan-highlights">
-              <li>1 vCPU · 2 GB RAM</li>
-              <li>40 GB NVMe</li>
-              <li>1 TB transfer</li>
+              <li><strong>1 vCPU</strong> and 2 GB RAM</li>
+              <li><strong>40 GB</strong> NVMe storage</li>
+              <li><strong>1 TB</strong> monthly transfer</li>
+              <li><strong>1</strong> dedicated IPv4</li>
+              <li><strong>2</strong> snapshots</li>
+              <li>Full root access</li>
+              <li>Basic control panel</li>
+              <li>Ticket support</li>
             </ul>
-            <a class="btn btn-secondary" href="#footer">Order Starter</a>
           </li>
 
           <li class="plan-card is-popular" data-plan="growth" data-monthly="4800">
             <p class="popular-badge">Most popular</p>
-            <h3>Growth</h3>
-            <p class="plan-tagline">Production sites and APIs</p>
-            <p class="price-block">
-              <span class="price" data-price>
-                <span class="currency-code">Rs</span>
-                <span class="amount">4,800</span>
-              </span>
-              <span class="period" data-period>/mo</span>
-            </p>
-            <p class="annual-meta" data-annual-meta hidden></p>
-            <p class="savings" data-savings hidden></p>
+            <div class="plan-top">
+              <h3>Growth</h3>
+              <p class="plan-tagline">For production sites, APIs, and small teams.</p>
+              <p class="price-block">
+                <span class="price" data-price>
+                  <span class="currency-code">Rs</span>
+                  <span class="amount">4,800</span>
+                </span>
+                <span class="period" data-period>/mo</span>
+              </p>
+              <a class="btn btn-plan" href="#footer">Choose plan</a>
+              <p class="annual-meta" data-annual-meta hidden></p>
+              <p class="savings" data-savings hidden></p>
+            </div>
             <ul class="plan-highlights">
-              <li>2 vCPU · 4 GB RAM</li>
-              <li>80 GB NVMe</li>
-              <li>2 TB transfer</li>
+              <li><strong>2 vCPU</strong> and 4 GB RAM</li>
+              <li><strong>80 GB</strong> NVMe storage</li>
+              <li><strong>2 TB</strong> monthly transfer</li>
+              <li><strong>1</strong> dedicated IPv4</li>
+              <li><strong>5</strong> snapshots</li>
+              <li>Full root access</li>
+              <li>Full control panel</li>
+              <li>Priority ticket support</li>
             </ul>
-            <a class="btn btn-primary" href="#footer">Order Growth</a>
+            <p class="plan-why">
+              <strong>Why this plan?</strong>
+              Best balance of price and power for most Pakistani product teams.
+            </p>
           </li>
 
           <li class="plan-card" data-plan="scale" data-monthly="9600">
-            <h3>Scale</h3>
-            <p class="plan-tagline">Busy shops and SaaS</p>
-            <p class="price-block">
-              <span class="price" data-price>
-                <span class="currency-code">Rs</span>
-                <span class="amount">9,600</span>
-              </span>
-              <span class="period" data-period>/mo</span>
-            </p>
-            <p class="annual-meta" data-annual-meta hidden></p>
-            <p class="savings" data-savings hidden></p>
+            <div class="plan-top">
+              <h3>Scale</h3>
+              <p class="plan-tagline">For busy shops, SaaS apps, and higher traffic.</p>
+              <p class="price-block">
+                <span class="price" data-price>
+                  <span class="currency-code">Rs</span>
+                  <span class="amount">9,600</span>
+                </span>
+                <span class="period" data-period>/mo</span>
+              </p>
+              <a class="btn btn-plan" href="#footer">Choose plan</a>
+              <p class="annual-meta" data-annual-meta hidden></p>
+              <p class="savings" data-savings hidden></p>
+            </div>
             <ul class="plan-highlights">
-              <li>4 vCPU · 8 GB RAM</li>
-              <li>160 GB NVMe</li>
-              <li>4 TB transfer</li>
+              <li><strong>4 vCPU</strong> and 8 GB RAM</li>
+              <li><strong>160 GB</strong> NVMe storage</li>
+              <li><strong>4 TB</strong> monthly transfer</li>
+              <li><strong>2</strong> dedicated IPv4</li>
+              <li><strong>10</strong> snapshots</li>
+              <li>Full root access</li>
+              <li>Full control panel</li>
+              <li>Priority ticket support</li>
             </ul>
-            <a class="btn btn-secondary" href="#footer">Order Scale</a>
           </li>
 
           <li class="plan-card" data-plan="dedicated" data-monthly="19500">
-            <h3>Dedicated Core</h3>
-            <p class="plan-tagline">Heavier workloads, fewer neighbours</p>
-            <p class="price-block">
-              <span class="price" data-price>
-                <span class="currency-code">Rs</span>
-                <span class="amount">19,500</span>
-              </span>
-              <span class="period" data-period>/mo</span>
-            </p>
-            <p class="annual-meta" data-annual-meta hidden></p>
-            <p class="savings" data-savings hidden></p>
+            <div class="plan-top">
+              <h3>Dedicated Core</h3>
+              <p class="plan-tagline">For heavier workloads that need more headroom.</p>
+              <p class="price-block">
+                <span class="price" data-price>
+                  <span class="currency-code">Rs</span>
+                  <span class="amount">19,500</span>
+                </span>
+                <span class="period" data-period>/mo</span>
+              </p>
+              <a class="btn btn-plan" href="#footer">Choose plan</a>
+              <p class="annual-meta" data-annual-meta hidden></p>
+              <p class="savings" data-savings hidden></p>
+            </div>
             <ul class="plan-highlights">
-              <li>8 vCPU · 16 GB RAM</li>
-              <li>320 GB NVMe</li>
-              <li>8 TB transfer</li>
+              <li><strong>8 vCPU</strong> and 16 GB RAM</li>
+              <li><strong>320 GB</strong> NVMe storage</li>
+              <li><strong>8 TB</strong> monthly transfer</li>
+              <li><strong>3</strong> dedicated IPv4</li>
+              <li><strong>Unlimited</strong> snapshots</li>
+              <li>Full root access</li>
+              <li>Full control panel</li>
+              <li>Phone and ticket support</li>
             </ul>
-            <a class="btn btn-secondary" href="#footer">Order Dedicated Core</a>
           </li>
         </ul>
       </div>
