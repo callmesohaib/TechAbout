@@ -22,6 +22,24 @@
   --font-soft: Candara, Calibri, "Segoe UI", "Trebuchet MS", sans-serif;
   --font-display: var(--font-soft);
   --font-ui: var(--font-soft);
+  --weight-heading: 500;
+  --weight-emphasis: 600;
+}
+
+h1,
+h2,
+h3,
+.brand-text,
+.hero-brand,
+.section-head h2,
+.plans-head h2,
+.faq-head h2,
+.footer-heading,
+.footer-brand .brand-text,
+.plan-card h3,
+.hero-panel-amount,
+.payments-heading {
+  font-weight: var(--weight-heading);
 }
 
 *,
@@ -190,9 +208,9 @@ a:hover {
 .brand-text {
   font-family: var(--font-display);
   font-size: 1.35rem;
-  font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1;
+  color: #1d1d1f;
 }
 
 .header-nav {
@@ -290,8 +308,7 @@ a:hover {
   margin: 0 0 0.85rem;
   font-family: var(--font-display);
   font-size: clamp(2.6rem, 6vw, 3.6rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   line-height: 1;
   color: #fff;
   animation: rise-in 0.7s ease both;
@@ -302,8 +319,7 @@ a:hover {
   font-family: var(--font-display);
   font-size: clamp(1.75rem, 3.8vw, 2.5rem);
   line-height: 1.15;
-  letter-spacing: -0.025em;
-  font-weight: 700;
+  letter-spacing: -0.02em;
   color: #d7f3f1;
   animation: rise-in 0.7s ease 0.08s both;
 }
@@ -360,9 +376,8 @@ a:hover {
   display: block;
   font-family: var(--font-display);
   font-size: 2rem;
-  font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   color: #fff;
 }
 
@@ -428,7 +443,7 @@ a:hover {
   border: 1px solid transparent;
   font: inherit;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: var(--weight-emphasis);
   text-decoration: none;
   cursor: pointer;
   transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
@@ -499,8 +514,8 @@ a:hover {
   margin: 0;
   font-family: var(--font-display);
   font-size: clamp(1.55rem, 3vw, 1.95rem);
-  letter-spacing: -0.025em;
-  color: var(--ink);
+  letter-spacing: -0.02em;
+  color: #1d1d1f;
 }
 
 .controls {
@@ -573,7 +588,6 @@ a:hover {
 .plans-head h2 {
   font-family: var(--font-soft);
   font-size: clamp(2rem, 4vw, 2.75rem);
-  font-weight: 600;
   letter-spacing: -0.02em;
   color: #1d1d1f;
   line-height: 1.2;
@@ -641,9 +655,8 @@ a:hover {
   margin: 0;
   font-family: var(--font-display);
   font-size: 1.55rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  color: var(--ink);
+  letter-spacing: -0.02em;
+  color: #1d1d1f;
 }
 
 .plan-card.is-popular h3 {
@@ -675,10 +688,10 @@ a:hover {
 .price {
   font-family: var(--font-display);
   font-size: clamp(2rem, 3.5vw, 2.45rem);
-  font-weight: 700;
-  letter-spacing: -0.04em;
+  font-weight: var(--weight-emphasis);
+  letter-spacing: -0.03em;
   line-height: 1;
-  color: var(--ink);
+  color: #1d1d1f;
 }
 
 .plan-card.is-popular .price {
@@ -815,8 +828,8 @@ a:hover {
 
 .spec-table thead th {
   background: var(--brand-soft);
-  font-weight: 700;
-  color: var(--ink);
+  font-weight: var(--weight-emphasis);
+  color: #1d1d1f;
   position: sticky;
   top: 0;
   font-size: 1rem;
@@ -869,7 +882,6 @@ a:hover {
   margin: 0;
   font-family: var(--font-soft);
   font-size: clamp(2rem, 4vw, 2.75rem);
-  font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.2;
   color: #1d1d1f;
@@ -908,10 +920,10 @@ a:hover {
   justify-content: space-between;
   gap: 2rem;
   font-family: var(--font-soft);
-  font-weight: 500;
+  font-weight: var(--weight-heading);
   padding: 1.7rem 0;
   list-style: none;
-  color: #2d2d2d;
+  color: #1d1d1f;
   font-size: 1.125rem;
   line-height: 1.45;
   letter-spacing: -0.01em;
@@ -996,6 +1008,7 @@ a:hover {
   color: #fff;
   margin: 0 0 0.55rem;
   font-size: 1.45rem;
+  letter-spacing: -0.02em;
 }
 
 .footer-brand p:last-child {
@@ -1011,7 +1024,6 @@ a:hover {
   font-family: var(--font-soft);
   font-size: 0.95rem;
   color: #fff;
-  font-weight: 600;
   letter-spacing: 0.02em;
 }
 
