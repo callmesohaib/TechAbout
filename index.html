@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en-PK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PKHosting VPS Hosting — SSD virtual servers for Pakistani teams. Invented demo pricing for assessment only.">
+  <title>PKHosting VPS Hosting</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-current="page">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">PKHosting</span>
+      </a>
+      <nav class="header-nav" aria-label="Page">
+        <a href="#plans">Plans</a>
+        <a href="#compare">Compare</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="currency-wrap">
+        <label for="currency">Currency</label>
+        <select id="currency" name="currency">
+          <option value="PKR" selected>PKR</option>
+          <option value="USD">USD</option>
+          <option value="GBP">GBP</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap hero-inner">
+        <p class="hero-kicker">VPS Hosting</p>
+        <h1 id="hero-heading">PKHosting VPS Hosting</h1>
+        <p class="hero-lead">
+          Root-access SSD servers for agencies and product teams who need predictable performance from Pakistan — without shared-hosting guesswork.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#plans">See VPS plans</a>
+          <a class="btn btn-ghost" href="#compare">Compare specs</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans" class="plans" aria-labelledby="plans-heading">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 id="plans-heading">Choose a VPS plan</h2>
+          <p>Four tiers. Same stack. Scale when traffic or teammates demand it.</p>
+        </header>
+
+        <div class="controls">
+          <div class="billing" role="group" aria-label="Billing period">
+            <button type="button" id="bill-monthly" class="billing-btn is-active" aria-pressed="true">Monthly</button>
+            <button type="button" id="bill-annually" class="billing-btn" aria-pressed="false">
+              Annually <span class="save-hint">2 months free</span>
+            </button>
+          </div>
+          <p class="billing-note" id="billing-note">
+            Annual billing charges 10 months for 12. Cards show the equivalent monthly rate.
+          </p>
+        </div>
+
+        <div class="sr-only" id="price-live" aria-live="polite" aria-atomic="true"></div>
+
+        <ul class="plan-grid">
+          <li class="plan-card" data-plan="starter" data-monthly="2400">
+            <h3>Starter</h3>
+            <p class="plan-tagline">Side projects and staging</p>
+            <p class="price-block">
+              <span class="price" data-price>
+                <span class="currency-code">Rs</span>
+                <span class="amount">2,400</span>
+              </span>
+              <span class="period" data-period>/mo</span>
+            </p>
+            <p class="annual-meta" data-annual-meta hidden></p>
+            <p class="savings" data-savings hidden></p>
+            <ul class="plan-highlights">
+              <li>1 vCPU · 2 GB RAM</li>
+              <li>40 GB NVMe</li>
+              <li>1 TB transfer</li>
+            </ul>
+            <a class="btn btn-secondary" href="#footer">Order Starter</a>
+          </li>
+
+          <li class="plan-card is-popular" data-plan="growth" data-monthly="4800">
+            <p class="popular-badge">Most popular</p>
+            <h3>Growth</h3>
+            <p class="plan-tagline">Production sites and APIs</p>
+            <p class="price-block">
+              <span class="price" data-price>
+                <span class="currency-code">Rs</span>
+                <span class="amount">4,800</span>
+              </span>
+              <span class="period" data-period>/mo</span>
+            </p>
+            <p class="annual-meta" data-annual-meta hidden></p>
+            <p class="savings" data-savings hidden></p>
+            <ul class="plan-highlights">
+              <li>2 vCPU · 4 GB RAM</li>
+              <li>80 GB NVMe</li>
+              <li>2 TB transfer</li>
+            </ul>
+            <a class="btn btn-primary" href="#footer">Order Growth</a>
+          </li>
+
+          <li class="plan-card" data-plan="scale" data-monthly="9600">
+            <h3>Scale</h3>
+            <p class="plan-tagline">Busy shops and SaaS</p>
+            <p class="price-block">
+              <span class="price" data-price>
+                <span class="currency-code">Rs</span>
+                <span class="amount">9,600</span>
+              </span>
+              <span class="period" data-period>/mo</span>
+            </p>
+            <p class="annual-meta" data-annual-meta hidden></p>
+            <p class="savings" data-savings hidden></p>
+            <ul class="plan-highlights">
+              <li>4 vCPU · 8 GB RAM</li>
+              <li>160 GB NVMe</li>
+              <li>4 TB transfer</li>
+            </ul>
+            <a class="btn btn-secondary" href="#footer">Order Scale</a>
+          </li>
+
+          <li class="plan-card" data-plan="dedicated" data-monthly="19500">
+            <h3>Dedicated Core</h3>
+            <p class="plan-tagline">Heavier workloads, fewer neighbours</p>
+            <p class="price-block">
+              <span class="price" data-price>
+                <span class="currency-code">Rs</span>
+                <span class="amount">19,500</span>
+              </span>
+              <span class="period" data-period>/mo</span>
+            </p>
+            <p class="annual-meta" data-annual-meta hidden></p>
+            <p class="savings" data-savings hidden></p>
+            <ul class="plan-highlights">
+              <li>8 vCPU · 16 GB RAM</li>
+              <li>320 GB NVMe</li>
+              <li>8 TB transfer</li>
+            </ul>
+            <a class="btn btn-secondary" href="#footer">Order Dedicated Core</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="compare" class="compare" aria-labelledby="compare-heading">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 id="compare-heading">Compare all plans</h2>
+          <p>Ten specs across every tier. Scroll sideways on small screens — the page itself stays put.</p>
+        </header>
+
+        <div class="table-scroll" tabindex="0" role="region" aria-labelledby="compare-heading">
+          <table class="spec-table">
+            <caption class="sr-only">VPS plan comparison across ten specifications</caption>
+            <thead>
+              <tr>
+                <th scope="col">Specification</th>
+                <th scope="col">Starter</th>
+                <th scope="col">Growth</th>
+                <th scope="col">Scale</th>
+                <th scope="col">Dedicated Core</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">vCPU</th>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <th scope="row">RAM</th>
+                <td>2 GB</td>
+                <td>4 GB</td>
+                <td>8 GB</td>
+                <td>16 GB</td>
+              </tr>
+              <tr>
+                <th scope="row">NVMe storage</th>
+                <td>40 GB</td>
+                <td>80 GB</td>
+                <td>160 GB</td>
+                <td>320 GB</td>
+              </tr>
+              <tr>
+                <th scope="row">Bandwidth</th>
+                <td>1 TB</td>
+                <td>2 TB</td>
+                <td>4 TB</td>
+                <td>8 TB</td>
+              </tr>
+              <tr>
+                <th scope="row">Dedicated IPv4</th>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th scope="row">Snapshots</th>
+                <td>2</td>
+                <td>5</td>
+                <td>10</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <th scope="row">Root access</th>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th scope="row">Control panel</th>
+                <td>Basic</td>
+                <td>Full</td>
+                <td>Full</td>
+                <td>Full</td>
+              </tr>
+              <tr>
+                <th scope="row">Support</th>
+                <td>Ticket</td>
+                <td>Priority ticket</td>
+                <td>Priority ticket</td>
+                <td>Phone + ticket</td>
+              </tr>
+              <tr>
+                <th scope="row">Uptime target</th>
+                <td>99.9%</td>
+                <td>99.9%</td>
+                <td>99.95%</td>
+                <td>99.99%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq" aria-labelledby="faq-heading">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 id="faq-heading">Questions before you order</h2>
+          <p>Short answers. Expand a row for detail.</p>
+        </header>
+
+        <div class="faq-list">
+          <details>
+            <summary>Is this a real VPS product I can buy today?</summary>
+            <p>No. This page is a TechAbout hiring assessment demo with invented prices. It is not connected to live PKHosting checkout.</p>
+          </details>
+          <details>
+            <summary>How does annual billing save money?</summary>
+            <p>You pay for 10 months and get 12. The card shows the equivalent monthly rate — for Growth that is Rs 4,000/mo when billed annually — plus the yearly total and savings.</p>
+          </details>
+          <details>
+            <summary>Can I switch currency?</summary>
+            <p>Yes. Use the Currency control in the header for PKR, USD, or GBP. Rates on this demo are fixed: 1 USD = 278.50 PKR and 1 GBP = 355.00 PKR. Your choice is remembered after a reload.</p>
+          </details>
+          <details>
+            <summary>Do I get root access on every plan?</summary>
+            <p>Yes. All four tiers include full root access. Starter ships with a lighter control panel; Growth and above include the full panel.</p>
+          </details>
+          <details>
+            <summary>Which payment methods work for Pakistani buyers?</summary>
+            <p>See the footer. This demo lists JazzCash, Easypaisa, local bank transfer, Visa/Mastercard, and PayPal — chosen for local wallets plus cards for diaspora and agency billing.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <p class="brand-text">PKHosting</p>
+        <p>Demo VPS pricing page for assessment review. Not a live storefront.</p>
+      </div>
+
+      <div class="payments">
+        <h2 class="payments-heading">Payment methods</h2>
+        <p class="payments-note">Text labels only — no hotlinked brand logos.</p>
+        <ul class="payment-list">
+          <li>JazzCash</li>
+          <li>Easypaisa</li>
+          <li>Bank transfer</li>
+          <li>Visa / Mastercard</li>
+          <li>PayPal</li>
+        </ul>
+      </div>
+
+      <div class="footer-meta">
+        <p><a href="#plans">Back to plans</a></p>
+        <p>© 2026 PKHosting assessment demo</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/pricing.js" defer></script>
+</body>
+</html>
