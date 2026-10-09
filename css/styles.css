@@ -129,11 +129,30 @@ a:hover {
 }
 
 .header-inner {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  gap: 0.75rem 1.25rem;
+  column-gap: 1rem;
+  row-gap: 0.55rem;
   padding: 0.85rem 0;
+}
+
+.header-inner .brand {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+}
+
+.header-inner .currency-wrap {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+}
+
+.header-inner .header-nav {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  margin-left: 0;
 }
 
 .brand {
@@ -689,11 +708,21 @@ a:hover {
 
 @media (min-width: 768px) {
   .header-inner {
+    display: flex;
     flex-wrap: nowrap;
+    gap: 0.75rem 1.25rem;
   }
 
-  .currency-wrap {
-    margin-left: 0.25rem;
+  .header-inner .brand,
+  .header-inner .currency-wrap,
+  .header-inner .header-nav {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .header-inner .header-nav {
+    margin-left: auto;
+    justify-content: flex-end;
   }
 
   .hero {
