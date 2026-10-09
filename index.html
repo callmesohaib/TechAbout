@@ -22,8 +22,8 @@
         <a href="#faq">FAQ</a>
       </nav>
       <div class="currency-wrap">
-        <label for="currency">Currency</label>
-        <select id="currency" name="currency">
+        <label class="sr-only" for="currency">Currency</label>
+        <select id="currency" name="currency" aria-label="Currency">
           <option value="PKR" selected>PKR</option>
           <option value="USD">USD</option>
           <option value="GBP">GBP</option>
@@ -48,21 +48,32 @@
             <a class="btn btn-ghost" href="#compare">Compare specs</a>
           </div>
         </div>
-        <div class="hero-stage" aria-hidden="true">
-          <div class="rack">
-            <div class="rack-unit is-lit"><span></span><span></span><span></span></div>
-            <div class="rack-unit"><span></span><span></span><span></span></div>
-            <div class="rack-unit is-lit"><span></span><span></span><span></span></div>
-            <div class="rack-unit"><span></span><span></span><span></span></div>
-            <div class="rack-unit is-lit"><span></span><span></span><span></span></div>
-          </div>
-          <div class="rack rack-back">
-            <div class="rack-unit"><span></span><span></span></div>
-            <div class="rack-unit is-lit"><span></span><span></span></div>
-            <div class="rack-unit"><span></span><span></span></div>
-            <div class="rack-unit is-lit"><span></span><span></span></div>
-          </div>
-        </div>
+        <aside class="hero-panel" aria-label="VPS highlights">
+          <p class="hero-panel-kicker">What you get</p>
+          <p class="hero-panel-price">
+            <span class="hero-panel-label">Plans from</span>
+            <span class="hero-panel-amount">Rs 2,400<span>/mo</span></span>
+          </p>
+          <ul class="hero-panel-list">
+            <li>
+              <strong>Full root access</strong>
+              <span>Install the stack you need</span>
+            </li>
+            <li>
+              <strong>NVMe SSD storage</strong>
+              <span>40 GB to 320 GB by plan</span>
+            </li>
+            <li>
+              <strong>Dedicated IPv4</strong>
+              <span>1 to 3 addresses included</span>
+            </li>
+            <li>
+              <strong>Pakistan support</strong>
+              <span>Tickets on every plan</span>
+            </li>
+          </ul>
+          <p class="hero-panel-foot">4 plans. Monthly or annual billing.</p>
+        </aside>
       </div>
     </section>
 
