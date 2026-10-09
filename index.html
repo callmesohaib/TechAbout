@@ -10,29 +10,30 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="index.html" aria-current="page">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">PKHosting</span>
-      </a>
-      <nav class="header-nav" aria-label="Page">
-        <a href="#plans">Plans</a>
-        <a href="#compare">Compare</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-      <div class="currency-wrap">
-        <label class="sr-only" for="currency">Currency</label>
-        <select id="currency" name="currency" aria-label="Currency">
-          <option value="PKR" selected>PKR</option>
-          <option value="USD">USD</option>
-          <option value="GBP">GBP</option>
-        </select>
-      </div>
-    </div>
-  </header>
-
   <main id="main">
+    <div class="hero-band">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-current="page">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">PKHosting</span>
+        </a>
+        <nav class="header-nav" aria-label="Page">
+          <a href="#plans">Plans</a>
+          <a href="#compare">Compare</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="currency-wrap">
+          <label class="sr-only" for="currency">Currency</label>
+          <select id="currency" name="currency" aria-label="Currency">
+            <option value="PKR" selected>PKR</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="hero-mesh" aria-hidden="true"></div>
@@ -75,6 +76,7 @@
         </aside>
       </div>
     </section>
+    </div>
 
     <section id="plans" class="plans" aria-labelledby="plans-heading">
       <div class="wrap">
@@ -279,38 +281,44 @@
     <section id="faq" class="faq" aria-labelledby="faq-heading">
       <div class="wrap faq-wrap">
         <header class="section-head faq-head">
-          <h2 id="faq-heading">FAQ</h2>
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
         </header>
 
         <div class="faq-list">
           <details>
             <summary><span>Is this a real VPS product I can buy today?</span></summary>
             <div class="faq-answer">
-              <p>No. This page is a TechAbout hiring assessment demo with invented prices. It is not connected to live PKHosting checkout.</p>
+              <p>No. This page is a TechAbout hiring assessment demo. The plans, prices, and specs are invented for review only. Nothing here is connected to live PKHosting checkout, billing, or provisioning, and you cannot place a real order from this page.</p>
             </div>
           </details>
           <details>
             <summary><span>How does annual billing save money?</span></summary>
             <div class="faq-answer">
-              <p>You pay for 10 months and get 12. The card shows the equivalent monthly rate (for Growth that is Rs 4,000/mo when billed annually), plus the yearly total and savings.</p>
+              <p>Annual billing charges 10 months for 12 months of service. The pricing cards show the equivalent monthly rate, the yearly total, and how much you save compared with paying month to month. For example, Growth is Rs 4,800 per month on monthly billing, and Rs 4,000 per month when billed annually (Rs 48,000 for the year).</p>
             </div>
           </details>
           <details>
-            <summary><span>Can I switch currency?</span></summary>
+            <summary><span>Can I switch the displayed currency?</span></summary>
             <div class="faq-answer">
-              <p>Yes. Use the PKR / USD / GBP menu in the header. Rates on this demo are fixed: 1 USD = 278.50 PKR and 1 GBP = 355.00 PKR. Your choice is remembered after a reload.</p>
+              <p>Yes. Use the PKR, USD, or GBP menu in the floating header. This demo uses fixed conversion rates with no live exchange API: 1 USD equals 278.50 PKR, and 1 GBP equals 355.00 PKR. PKR amounts are whole numbers; USD and GBP show two decimal places. Your currency and billing period choices are stored in the browser and survive a page reload.</p>
             </div>
           </details>
           <details>
             <summary><span>Do I get root access on every plan?</span></summary>
             <div class="faq-answer">
-              <p>Yes. All four tiers include full root access. Starter ships with a lighter control panel; Growth and above include the full panel.</p>
+              <p>Yes. Starter, Growth, Scale, and Dedicated Core all include full root access so you can install and configure the software you need. Starter includes a basic control panel. Growth, Scale, and Dedicated Core include the full control panel. Dedicated Core also adds phone support on top of ticket support.</p>
             </div>
           </details>
           <details>
-            <summary><span>Which payment methods work for Pakistani buyers?</span></summary>
+            <summary><span>Which payment methods would a Pakistani VPS buyer use?</span></summary>
             <div class="faq-answer">
-              <p>See the footer. This demo lists JazzCash, Easypaisa, local bank transfer, Visa/Mastercard, and PayPal, chosen for local wallets plus cards for diaspora and agency billing.</p>
+              <p>The footer lists JazzCash, Easypaisa, local bank transfer, Visa/Mastercard, and PayPal. JazzCash and Easypaisa cover common mobile wallets in Pakistan. Bank transfer suits larger invoices such as Dedicated Core. Cards and PayPal help diaspora and agency clients who pay from abroad. Brand logos are not hotlinked; methods are shown as text labels only.</p>
+            </div>
+          </details>
+          <details>
+            <summary><span>What happens if JavaScript is turned off?</span></summary>
+            <div class="faq-answer">
+              <p>The page still opens offline from index.html. Monthly PKR prices stay visible on the plan cards, and the full comparison table remains in the HTML. The FAQ still expands with native details elements. The monthly/annual toggle and currency menu will not update prices until JavaScript is available.</p>
             </div>
           </details>
         </div>

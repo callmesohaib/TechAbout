@@ -109,6 +109,15 @@ a:hover {
   margin-inline: auto;
 }
 
+/* Top band: hero color from the very top (no white gap) */
+
+.hero-band {
+  position: relative;
+  background:
+    linear-gradient(125deg, #032f3a 0%, #075f6d 28%, #0d8a8a 58%, #e85d2a 140%);
+  padding-top: 0.85rem;
+}
+
 /* Header: floating bar, not full-bleed */
 
 .site-header {
@@ -116,7 +125,7 @@ a:hover {
   top: 0.85rem;
   z-index: 20;
   width: min(100% - 1.5rem, 920px);
-  margin: 0.85rem auto 0;
+  margin: 0 auto;
   background: rgba(255, 255, 255, 0.96);
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -225,14 +234,13 @@ a:hover {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  min-height: min(88vh, 640px);
+  min-height: min(78vh, 580px);
   display: flex;
   align-items: center;
-  margin-top: -3rem;
-  padding: calc(3.5rem + 3rem) 0 3.75rem;
+  margin-top: 0;
+  padding: 2.75rem 0 3.75rem;
   color: #e8f6f7;
-  background:
-    linear-gradient(125deg, #032f3a 0%, #075f6d 28%, #0d8a8a 58%, #e85d2a 140%);
+  background: transparent;
   border-bottom: 0;
 }
 
@@ -942,10 +950,13 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+  .hero-band {
+    padding-top: 1rem;
+  }
+
   .site-header {
     width: min(100% - 2rem, 960px);
     top: 1rem;
-    margin-top: 1rem;
   }
 
   .header-inner {
@@ -970,10 +981,8 @@ a:hover {
   }
 
   .hero {
-    min-height: min(82vh, 620px);
-    padding: 4.5rem 0;
-    margin-top: -3.25rem;
-    padding-top: calc(4.5rem + 3.25rem);
+    min-height: min(78vh, 580px);
+    padding: 3.25rem 0 4.5rem;
   }
 
   .hero-layout {
@@ -1013,6 +1022,7 @@ a:hover {
 .compare,
 .faq,
 .hero,
+.hero-band,
 .site-footer {
   overflow-x: clip;
 }
